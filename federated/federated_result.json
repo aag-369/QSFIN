@@ -1,0 +1,209 @@
+{
+  "features_used": [
+    "num_suspects",
+    "evidence_strength",
+    "days_to_forensic_report",
+    "has_digital_evidence",
+    "has_witness",
+    "prior_offender_link"
+  ],
+  "agencies": [
+    {
+      "agency_id": "AG-CFSL",
+      "name": "Simulated Central Forensic Science Lab",
+      "n_train": 188,
+      "n_test": 62
+    },
+    {
+      "agency_id": "AG-DL",
+      "name": "Simulated Metro Police Dept. (Delhi-style)",
+      "n_train": 300,
+      "n_test": 100
+    },
+    {
+      "agency_id": "AG-KA",
+      "name": "Simulated State Police Dept. (Karnataka-style)",
+      "n_train": 225,
+      "n_test": 75
+    },
+    {
+      "agency_id": "AG-MH",
+      "name": "Simulated State Police Dept. (Maharashtra-style)",
+      "n_train": 413,
+      "n_test": 137
+    }
+  ],
+  "local_only_accuracy": {
+    "AG-CFSL": 0.871,
+    "AG-DL": 0.85,
+    "AG-KA": 0.8,
+    "AG-MH": 0.8467
+  },
+  "centralized_pooled_accuracy": {
+    "AG-CFSL": 0.8871,
+    "AG-DL": 0.83,
+    "AG-KA": 0.8,
+    "AG-MH": 0.8467
+  },
+  "federated_accuracy_final_round": {
+    "AG-CFSL": 0.8871,
+    "AG-DL": 0.83,
+    "AG-KA": 0.8133,
+    "AG-MH": 0.8467
+  },
+  "federated_training_history": [
+    {
+      "round": 1,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8548,
+        "AG-DL": 0.78,
+        "AG-KA": 0.7733,
+        "AG-MH": 0.854
+      },
+      "mean_accuracy": 0.8155
+    },
+    {
+      "round": 2,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8548,
+        "AG-DL": 0.81,
+        "AG-KA": 0.8,
+        "AG-MH": 0.8613
+      },
+      "mean_accuracy": 0.8315
+    },
+    {
+      "round": 3,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8548,
+        "AG-DL": 0.82,
+        "AG-KA": 0.8,
+        "AG-MH": 0.854
+      },
+      "mean_accuracy": 0.8322
+    },
+    {
+      "round": 4,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8548,
+        "AG-DL": 0.82,
+        "AG-KA": 0.8,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8304
+    },
+    {
+      "round": 5,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.871,
+        "AG-DL": 0.82,
+        "AG-KA": 0.8,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8344
+    },
+    {
+      "round": 6,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8402
+    },
+    {
+      "round": 7,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8402
+    },
+    {
+      "round": 8,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 9,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 10,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 11,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 12,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 13,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 14,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    },
+    {
+      "round": 15,
+      "per_agency_accuracy": {
+        "AG-CFSL": 0.8871,
+        "AG-DL": 0.83,
+        "AG-KA": 0.8133,
+        "AG-MH": 0.8467
+      },
+      "mean_accuracy": 0.8443
+    }
+  ],
+  "mean_local_only": 0.8419,
+  "mean_centralized": 0.841,
+  "mean_federated": 0.8443
+}

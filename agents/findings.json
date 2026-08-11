@@ -1,0 +1,197 @@
+[
+  {
+    "agent": "ballistics_agent",
+    "finding_id": "ballistics_agent-01",
+    "summary": "Single gunshot trajectory reconstructed: firing origin ~[3.1, 2.4, 1.0] near the sofa in the living room, entry angle 14.5\u00b0 into the west wall (evidence E-03).",
+    "reasoning": "Shell casing E-02 and bullet impact E-03 are geometrically consistent with a single shot fired from close range while standing/seated near the sofa, not from the doorway or kitchen entry point. This constrains the shooter's position at the moment of firing to within ~1m of the estimated origin.",
+    "confidence": 0.82,
+    "supports": [
+      "S1",
+      "S2"
+    ],
+    "contradicts": [],
+    "evidence_refs": [
+      "E-02",
+      "E-03",
+      "T-01"
+    ]
+  },
+  {
+    "agent": "ballistics_agent",
+    "finding_id": "ballistics_agent-02",
+    "summary": "Chain of custody for E-02 (shell_casing) is intact.",
+    "reasoning": "Custody log shows collection, transport, and lab receipt entries with no unexplained gaps.",
+    "confidence": 0.95,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": [
+      "E-02"
+    ]
+  },
+  {
+    "agent": "ballistics_agent",
+    "finding_id": "ballistics_agent-03",
+    "summary": "Chain of custody for E-03 (bullet_impact) is intact.",
+    "reasoning": "Custody log shows collection, transport, and lab receipt entries with no unexplained gaps.",
+    "confidence": 0.95,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": [
+      "E-03"
+    ]
+  },
+  {
+    "agent": "ballistics_agent",
+    "finding_id": "ballistics_agent-04",
+    "summary": "Footwear impression E-04 (Partial shoe print, size UK 9-10, tread pattern photographed) is consistent with shoe size range that includes: Suspect A (UK 9.5); Suspect B (UK 10).",
+    "reasoning": "Impression size/tread class narrows the pool of plausible individuals but a partial print alone cannot uniquely identify a wearer \u2014 this is corroborating, not conclusive, evidence. It should be weighted alongside digital-forensics and timeline findings, not read in isolation.",
+    "confidence": 0.45,
+    "supports": [
+      "S1",
+      "S2"
+    ],
+    "contradicts": [
+      "S3"
+    ],
+    "evidence_refs": [
+      "E-04",
+      "P-02",
+      "P-03"
+    ]
+  },
+  {
+    "agent": "digital_forensics_agent",
+    "finding_id": "digital_forensics_agent-01",
+    "summary": "Suspect A's device pinged 40m from the scene at 21:47, inside the estimated time-of-death window.",
+    "reasoning": "Cell-tower proximity places Suspect A at/near the scene during the window in which the victim is estimated to have died. This is consistent with physical presence but is not, by itself, proof of presence \u2014 tower triangulation has meter-to-hundreds-of-meter uncertainty depending on tower density.",
+    "confidence": 0.7,
+    "supports": [
+      "S1",
+      "S2"
+    ],
+    "contradicts": [],
+    "evidence_refs": [
+      "P-02"
+    ]
+  },
+  {
+    "agent": "digital_forensics_agent",
+    "finding_id": "digital_forensics_agent-02",
+    "summary": "Suspect B's device was consistently >150m from the scene throughout the time-of-death window.",
+    "reasoning": "Location data does not place this person near the scene during the relevant window, which weighs against a theory requiring their physical presence at the time of the shooting.",
+    "confidence": 0.65,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": [
+      "P-03"
+    ]
+  },
+  {
+    "agent": "digital_forensics_agent",
+    "finding_id": "digital_forensics_agent-03",
+    "summary": "Outgoing call from Suspect A to Suspect B at 21:52, 40m from the scene, duration 65s \u2014 roughly 5-7 minutes after the witness-reported gunshot.",
+    "reasoning": "A phone contact between the two persons of interest occurring shortly after the estimated time of the shooting, while the caller was still near the scene, is consistent with a coordination/joint-action scenario (S2). It is also consistent with an innocent, unrelated call \u2014 call content/transcript would be needed to move beyond circumstantial weight. This finding should not be treated as conclusive on its own.",
+    "confidence": 0.55,
+    "supports": [
+      "S2"
+    ],
+    "contradicts": [],
+    "evidence_refs": [
+      "P-02",
+      "P-03"
+    ]
+  },
+  {
+    "agent": "digital_forensics_agent",
+    "finding_id": "digital_forensics_agent-04",
+    "summary": "Suspect A moved from ~40m to 900m from the scene by 22:10, consistent with departure shortly after the witness-observed person left the stairwell (~21:50).",
+    "reasoning": "Movement pattern (arrival near scene -> presence during TOD window -> rapid departure) matches the witness account of someone leaving in a hurry, though it does not independently confirm identity.",
+    "confidence": 0.6,
+    "supports": [
+      "S1",
+      "S2"
+    ],
+    "contradicts": [],
+    "evidence_refs": [
+      "P-02",
+      "WS-01"
+    ]
+  },
+  {
+    "agent": "network_agent",
+    "finding_id": "network_agent-01",
+    "summary": "Suspect A has the highest degree centrality in the case network (0.67), connected to 2 other people of interest.",
+    "reasoning": "Degree centrality identifies who sits at the most connections in the known-associate/contact graph. A highly central person of interest warrants closer scrutiny, but centrality alone is not evidence of wrongdoing \u2014 it simply prioritizes investigative attention.",
+    "confidence": 0.6,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": [
+      "P-02"
+    ]
+  },
+  {
+    "agent": "network_agent",
+    "finding_id": "network_agent-02",
+    "summary": "Suspect A and Suspect B are directly connected in the network (relation: known_associate, plus a recorded call during the case window).",
+    "reasoning": "A pre-existing known-associate relationship between the two persons of interest, combined with contact during the incident window, increases the structural plausibility of a joint-action scenario (S2) relative to the two being unconnected strangers. This is circumstantial network evidence, not direct proof of coordination in this specific act.",
+    "confidence": 0.58,
+    "supports": [
+      "S2"
+    ],
+    "contradicts": [
+      "S3"
+    ],
+    "evidence_refs": [
+      "P-02",
+      "P-03"
+    ]
+  },
+  {
+    "agent": "network_agent",
+    "finding_id": "network_agent-03",
+    "summary": "No unconnected/isolated person-of-interest node exists in the current case network \u2014 all known persons of interest are linked to the victim or each other.",
+    "reasoning": "A scenario involving an unknown third party (S3) is not supported by the current network, since no unlinked candidate node exists in it \u2014 but this reflects the limits of the data collected so far, not proof that no such person exists. Absence of network evidence for S3 is weak evidence against it at best, and should be revisited if new persons of interest are added.",
+    "confidence": 0.35,
+    "supports": [],
+    "contradicts": [
+      "S3"
+    ],
+    "evidence_refs": []
+  },
+  {
+    "agent": "timeline_agent",
+    "finding_id": "timeline_agent-01",
+    "summary": "Reconstructed a 8-event timeline spanning 21:20\u201322:20 from medical, witness, and digital-forensics sources.",
+    "reasoning": "Merging independently-sourced timestamps (medical estimate, witness account, cell records) into one timeline is what allows cross-checking whether different evidence streams tell a mutually consistent story, rather than being assessed in isolation by different specialists.",
+    "confidence": 0.9,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": []
+  },
+  {
+    "agent": "timeline_agent",
+    "finding_id": "timeline_agent-02",
+    "summary": "Witness-reported gunshot time, victim's estimated time-of-death window, and P-02's near-scene cell activity all fall within the same ~20-30 minute span with no contradicting alibi evidence on file.",
+    "reasoning": "Three independently-collected sources (medical, eyewitness, telecom) are temporally consistent with each other. This convergence strengthens confidence in the overall timeline, though it does not by itself assign responsibility \u2014 consistency is necessary but not sufficient for a specific scenario to be correct.",
+    "confidence": 0.75,
+    "supports": [
+      "S1",
+      "S2"
+    ],
+    "contradicts": [],
+    "evidence_refs": [
+      "WS-01",
+      "P-02"
+    ]
+  },
+  {
+    "agent": "timeline_agent",
+    "finding_id": "timeline_agent-03",
+    "summary": "No alibi evidence (e.g. independent corroboration placing a person of interest elsewhere during the full time-of-death window) is present in the current case file.",
+    "reasoning": "This is an evidentiary gap, not a finding against anyone \u2014 a real investigation would actively seek out alibi evidence for all persons of interest before any scenario is treated as established. Its absence here should not be read as suspicious; it should be read as incomplete.",
+    "confidence": 0.5,
+    "supports": [],
+    "contradicts": [],
+    "evidence_refs": []
+  }
+]

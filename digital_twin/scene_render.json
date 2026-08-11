@@ -1,0 +1,170 @@
+{
+  "case_id": "QSFIN-2026-0417",
+  "title": "State vs. Unknown \u2014 Residential Homicide, Sector 21 Flat 4B",
+  "rooms": [
+    {
+      "room_id": "living_room",
+      "dimensions_m": [
+        5.2,
+        4.0,
+        2.9
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "room_id": "kitchen",
+      "dimensions_m": [
+        3.0,
+        3.0,
+        2.9
+      ],
+      "origin": [
+        5.2,
+        0,
+        0
+      ]
+    },
+    {
+      "room_id": "bedroom",
+      "dimensions_m": [
+        4.0,
+        3.5,
+        2.9
+      ],
+      "origin": [
+        0,
+        4.0,
+        0
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-01",
+      "type": "blood_spatter",
+      "room": "living_room",
+      "position": [
+        2.6,
+        1.8,
+        1.1
+      ],
+      "description": "Cast-off blood spatter pattern on north wall, medium velocity",
+      "color": "#c0392b",
+      "chain_of_custody": [
+        "SI R. Menon (23:52)",
+        "FSL Courier (00:40)",
+        "State FSL Biology Div. (08:15)"
+      ]
+    },
+    {
+      "evidence_id": "E-02",
+      "type": "shell_casing",
+      "room": "living_room",
+      "position": [
+        3.1,
+        2.4,
+        0.02
+      ],
+      "description": "9mm shell casing, near sofa",
+      "color": "#f1c40f",
+      "chain_of_custody": [
+        "SI R. Menon (23:55)",
+        "FSL Courier (00:40)",
+        "State FSL Ballistics Div. (08:20)"
+      ]
+    },
+    {
+      "evidence_id": "E-03",
+      "type": "bullet_impact",
+      "room": "living_room",
+      "position": [
+        0.1,
+        1.9,
+        1.4
+      ],
+      "description": "Bullet embedded in west wall, entry angle measurable",
+      "color": "#e67e22",
+      "chain_of_custody": [
+        "SI R. Menon (23:58)",
+        "FSL Courier (00:40)",
+        "State FSL Ballistics Div. (08:20)"
+      ]
+    },
+    {
+      "evidence_id": "E-04",
+      "type": "footwear_impression",
+      "room": "kitchen",
+      "position": [
+        6.0,
+        1.2,
+        0.0
+      ],
+      "description": "Partial shoe print, size UK 9-10, tread pattern photographed",
+      "color": "#2980b9",
+      "chain_of_custody": [
+        "SI R. Menon (23:50)",
+        "FSL Courier (00:40)",
+        "State FSL Trace Div. (08:10)"
+      ]
+    },
+    {
+      "evidence_id": "E-05",
+      "type": "mobile_device",
+      "room": "bedroom",
+      "position": [
+        1.0,
+        5.5,
+        0.8
+      ],
+      "description": "Victim's mobile phone, screen locked, recovered on nightstand",
+      "color": "#8e44ad",
+      "chain_of_custody": [
+        "SI R. Menon (00:05)",
+        "Cyber Cell (09:00)"
+      ]
+    },
+    {
+      "evidence_id": "E-06",
+      "type": "fingerprint",
+      "room": "kitchen",
+      "position": [
+        5.4,
+        0.3,
+        1.0
+      ],
+      "description": "Latent print on kitchen door handle",
+      "color": "#16a085",
+      "chain_of_custody": [
+        "SI R. Menon (23:50)",
+        "FSL Courier (00:40)",
+        "State FSL Fingerprint Div. (08:05)"
+      ]
+    }
+  ],
+  "trajectories": [
+    {
+      "trajectory_id": "T-01",
+      "from": [
+        3.1,
+        2.4,
+        0.02
+      ],
+      "to": [
+        0.1,
+        1.9,
+        1.4
+      ],
+      "estimated_origin": [
+        3.1,
+        2.4,
+        1.0
+      ],
+      "angle_deg": 14.5,
+      "note": "Estimated firing origin near sofa, consistent with entry wound height."
+    }
+  ]
+}

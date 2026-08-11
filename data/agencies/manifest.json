@@ -1,0 +1,26 @@
+[
+  {
+    "agency_id": "AG-DL",
+    "n_cases": 400,
+    "resolved_rate": 0.372,
+    "path": "/tmp/qsfin/data/agencies/AG-DL_local_cases.json"
+  },
+  {
+    "agency_id": "AG-MH",
+    "n_cases": 550,
+    "resolved_rate": 0.307,
+    "path": "/tmp/qsfin/data/agencies/AG-MH_local_cases.json"
+  },
+  {
+    "agency_id": "AG-KA",
+    "n_cases": 300,
+    "resolved_rate": 0.423,
+    "path": "/tmp/qsfin/data/agencies/AG-KA_local_cases.json"
+  },
+  {
+    "agency_id": "AG-CFSL",
+    "n_cases": 250,
+    "resolved_rate": 0.332,
+    "path": "/tmp/qsfin/data/agencies/AG-CFSL_local_cases.json"
+  }
+]

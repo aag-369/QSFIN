@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QSFIN — Quantum Sentient Forensic Intelligence Network</title>
+<meta name="description" content="QSFIN is a research prototype AI system that reconstructs crime scenes, reasons about competing theories with full explainability, and works toward closing India's forensic-capacity gap. Digital twin, multi-agent analysis, neuro-symbolic reasoning, quantum-inspired optimization, and federated learning — running on synthetic demonstration data.">
+<meta property="og:title" content="QSFIN — Quantum Sentient Forensic Intelligence Network">
+<meta property="og:description" content="A research prototype for explainable, AI-assisted forensic investigation — built for India's forensic-capacity gap. Digital twin · multi-agent analysis · neuro-symbolic reasoning · quantum-inspired optimization · federated learning.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%2306080d%22/><circle cx=%2250%22 cy=%2250%22 r=%2224%22 fill=%22none%22 stroke=%22%233ea6ff%22 stroke-width=%226%22/><circle cx=%2250%22 cy=%2250%22 r=%228%22 fill=%22%233ea6ff%22/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top" aria-label="QSFIN home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-word">QSFIN</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#problem" data-section="problem">Problem</a>
+      <a href="#pipeline" data-section="pipeline">How It Works</a>
+      <a href="#explainability" data-section="explainability">Explainability</a>
+      <a href="#demo" data-section="demo">Live Demo</a>
+      <a href="#research" data-section="research">Research</a>
+      <a href="#roadmap" data-section="roadmap">Roadmap</a>
+      <a href="#about" data-section="about">About</a>
+      <a class="nav-cta" href="/dashboard" target="_blank" rel="noopener">Open Dashboard ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-field"></div>
+      <div class="scanline"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow"><span class="pill pill-status"><span class="dot"></span>RESEARCH PROTOTYPE · SYNTHETIC DEMONSTRATION DATA</span></p>
+      <h1 class="hero-title">QSFIN</h1>
+      <p class="hero-subtitle">Quantum Sentient Forensic Intelligence Network</p>
+      <p class="hero-lede">
+        An AI system that reconstructs crime scenes, reasons about competing theories with full
+        explainability, and works toward closing India's forensic-capacity gap — a working
+        prototype with a live backend behind it, not a static mockup.
+      </p>
+      <div class="hero-ctas">
+        <a href="#pipeline" class="btn btn-primary">Explore the system</a>
+        <a href="/dashboard" target="_blank" rel="noopener" class="btn btn-ghost">View live dashboard ↗</a>
+      </div>
+      <div class="stat-row" id="heroStats">
+        <div class="stat-tile"><span class="stat-num" data-count="50" data-suffix="%">0%</span><span class="stat-label">Forensic posts vacant nationwide</span></div>
+        <div class="stat-tile"><span class="stat-num" data-count="91" data-suffix="%">0%</span><span class="stat-label">Scientific-staff vacancy, Telangana FSL</span></div>
+        <div class="stat-tile"><span class="stat-num" data-count="5" data-suffix="+ Cr">0</span><span class="stat-label">Pending cases, Indian judiciary</span></div>
+        <div class="stat-tile"><span class="stat-num" data-count="76" data-suffix="%">0%</span><span class="stat-label">Of prisoners are undertrials</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROBLEM ================= -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">THE GAP</span></p>
+      <h2 class="section-title">India's forensic infrastructure is overwhelmed</h2>
+      <p class="section-lede">
+        These are documented, current figures — not hypothetical stakes. QSFIN exists because this
+        combination of problems has no existing Indian system addressing it end to end.
+      </p>
+
+      <div class="bar-list" id="problemBars">
+        <div class="bar-row" data-pct="50"><div class="bar-label">Sanctioned scientific posts vacant nationwide</div><div class="bar-track"><div class="bar-fill"></div></div><div class="bar-val">50%</div></div>
+        <div class="bar-row" data-pct="91"><div class="bar-label">Scientific-staff vacancy at Telangana FSL specifically</div><div class="bar-track"><div class="bar-fill"></div></div><div class="bar-val">91%</div></div>
+        <div class="bar-row" data-pct="100" data-label-override="4–5×"><div class="bar-label">DNA / toxicology / cyber forensics workload vs. sanctioned capacity</div><div class="bar-track"><div class="bar-fill"></div></div><div class="bar-val">4–5×</div></div>
+        <div class="bar-row" data-pct="76"><div class="bar-label">Of all prisoners in India are undertrials, not convicted</div><div class="bar-track"><div class="bar-fill"></div></div><div class="bar-val">76%</div></div>
+        <div class="bar-row" data-pct="100" data-label-override="131%"><div class="bar-label">Average national prison occupancy (some facilities exceed 400%)</div><div class="bar-track"><div class="bar-fill"></div></div><div class="bar-val">131%</div></div>
+      </div>
+
+      <p class="callout">
+        The BNSS (2024) now legally mandates forensic investigation for serious offences — states
+        have until roughly <strong>2029</strong> to comply, because the infrastructure doesn't yet
+        exist. Forensic evidence is routinely <strong>rejected or weakened in Indian courts</strong>
+        specifically because chain-of-custody and methodology can't be adequately demonstrated —
+        the exact gap QSFIN's explainability layer targets. No existing Indian system combines
+        scene reconstruction, multi-agency intelligence, and court-ready explainable reasoning.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= PIPELINE ================= -->
+  <section class="section section-alt" id="pipeline">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">HOW IT WORKS</span></p>
+      <h2 class="section-title">Five stages, one case, one live backend</h2>
+      <p class="section-lede">Click any stage to expand it. Numbers marked <span class="tag-live">LIVE</span> are fetched from the running QSFIN backend, not hardcoded.</p>
+
+      <div class="pipeline" id="pipelineList">
+        <svg class="pipeline-connector" id="pipelineConnector" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="60" y1="20" x2="940" y2="20" />
+        </svg>
+
+        <article class="stage" data-stage="1">
+          <button class="stage-head" aria-expanded="false">
+            <span class="stage-num">01</span>
+            <span class="stage-name">Digital Twin</span>
+            <span class="stage-oneliner">A persistent, queryable 3D crime-scene reconstruction</span>
+            <span class="stage-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="stage-body">
+            <p>Rooms, evidence markers, ballistic trajectories, and chain-of-custody records are
+            modeled as a queryable digital twin built from structured scan data — replacing static
+            photographs with an explorable, permanent virtual scene that never degrades once the
+            physical scene is released.</p>
+            <p class="stat-inline"><span class="tag-live">LIVE</span> <span id="statEvidence">–</span> evidence markers · <span id="statRooms">–</span> rooms in the current case twin</p>
+          </div>
+        </article>
+
+        <article class="stage" data-stage="2">
+          <button class="stage-head" aria-expanded="false">
+            <span class="stage-num">02</span>
+            <span class="stage-name">Multi-Agent Forensic Analysis</span>
+            <span class="stage-oneliner">Four specialized agents, one shared blackboard</span>
+            <span class="stage-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="stage-body">
+            <p>Ballistics &amp; Trace Evidence, Digital Forensics, Network Analysis, and Timeline
+            Reconstruction agents each independently analyze one slice of the case and post
+            structured, confidence-scored findings to a shared blackboard — mirroring how a real
+            investigative team is organized, and keeping every sub-conclusion auditable in
+            isolation.</p>
+            <p class="stat-inline"><span class="tag-live">LIVE</span> <span id="statFindings">–</span> findings posted by <span id="statAgentCount">–</span> agents on the current case</p>
+          </div>
+        </article>
+
+        <article class="stage" data-stage="3">
+          <button class="stage-head" aria-expanded="false">
+            <span class="stage-num">03</span>
+            <span class="stage-name">Neuro-Symbolic Explainable Reasoning</span>
+            <span class="stage-oneliner">Statistics and explicit rules, kept visibly separate</span>
+            <span class="stage-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="stage-body">
+            <p>A statistical aggregation of every agent finding ("the neural part") is adjusted by a
+            small set of explicit, named, human-readable rules ("the symbolic part") — such as
+            discounting evidence with a broken chain of custody. Every ranking ships with a full
+            plain-language explanation chain, because a black-box confidence score is not
+            admissible or persuasive in a courtroom — a traceable reasoning chain is.</p>
+            <p class="stat-inline"><span class="tag-live">LIVE</span> top-ranked scenario for the current case: <span id="statTopScenario">–</span></p>
+          </div>
+        </article>
+
+        <article class="stage" data-stage="4">
+          <button class="stage-head" aria-expanded="false">
+            <span class="stage-num">04</span>
+            <span class="stage-name">Quantum-Inspired Scenario Optimization</span>
+            <span class="stage-oneliner">A QUBO, solved by simulated annealing today</span>
+            <span class="stage-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="stage-body">
+            <p>Competing scenarios and contested evidence are jointly formulated as a QUBO
+            (Quadratic Unconstrained Binary Optimization) — the same mathematical form used by
+            real quantum annealers and QAOA circuits — and solved via simulated annealing,
+            verified against an exact brute-force optimum. <strong>This runs on classical hardware
+            today, using quantum-inspired mathematics — it is built to be quantum-ready as real
+            quantum hardware matures, and makes no claim of running on one now.</strong></p>
+            <p class="stat-inline"><span class="tag-live">LIVE</span> <span id="statQuboEnergy">–</span> — try it yourself in the Live Demo section below.</p>
+          </div>
+        </article>
+
+        <article class="stage" data-stage="5">
+          <button class="stage-head" aria-expanded="false">
+            <span class="stage-num">05</span>
+            <span class="stage-name">Federated Learning Across Agencies</span>
+            <span class="stage-oneliner">Shared intelligence, without shared raw data</span>
+            <span class="stage-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="stage-body">
+            <p>Multiple simulated police/forensic agencies each train a local model on their own
+            case data; only model parameters — never raw case records — are combined via FedAvg
+            (federated averaging) into a shared triage model. Demonstrated result: federated
+            accuracy lands close to a fully-centralized-data ceiling, both above local-only
+            performance, without any agency's raw data ever leaving that agency.</p>
+            <p class="stat-inline"><span class="tag-live">LIVE</span> <span id="statFedMean">–</span> — adjust it yourself in the Live Demo section below.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPLAINABILITY ================= -->
+  <section class="section" id="explainability">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">EXPLAINABILITY IN ACTION</span></p>
+      <h2 class="section-title">Every conclusion is a traceable chain, not a score</h2>
+      <p class="section-lede">
+        This is a live pull from the reasoning layer — the actual output format the system
+        produces, not a mockup. <span class="tag-live">LIVE</span>
+      </p>
+
+      <div class="dossier" id="dossierCard" aria-live="polite">
+        <div class="dossier-head">
+          <span class="chip mono">CASE QSFIN-2026-0417</span>
+          <span class="chip mono" id="dossierScenarioId">SCENARIO —</span>
+        </div>
+        <p class="dossier-summary" id="dossierSummary">Loading live reasoning output…</p>
+        <div class="dossier-score-row">
+          <div><span class="k">Raw score</span><span class="v mono" id="dossierRaw">–</span></div>
+          <div><span class="k">Adjusted score</span><span class="v mono accent" id="dossierAdjusted">–</span></div>
+        </div>
+        <div class="dossier-findings" id="dossierFindings"></div>
+      </div>
+
+      <div class="rerun-row">
+        <button class="btn btn-secondary" id="rerunCaseBtn">Re-run full case analysis live</button>
+        <span class="rerun-status" id="rerunCaseStatus"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE DEMO ================= -->
+  <section class="section section-alt" id="demo">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">LIVE DEMO</span></p>
+      <h2 class="section-title">Two of the system's live components, right here</h2>
+      <p class="section-lede">
+        These widgets call the real backend on every click — nothing below is pre-recorded.
+        For the full picture (digital twin viewer, all agent findings, complete reasoning chains),
+        open the <a href="/dashboard" target="_blank" rel="noopener">full interactive dashboard ↗</a>.
+        Running on synthetic demonstration data throughout.
+      </p>
+
+      <div class="demo-grid">
+        <div class="demo-card">
+          <h3>Quantum-inspired optimizer</h3>
+          <p class="demo-desc">Re-run the QUBO solver with a fresh random seed each time. Watch it
+          always match the exact brute-force optimum — and notice it can legitimately land on
+          either of two equally-optimal scenarios, a genuine tie in this case's physical-evidence
+          landscape.</p>
+          <button class="btn btn-secondary" id="rerunOptBtn">Re-run optimizer (new random seed)</button>
+          <div class="demo-result" id="optResult" aria-live="polite">
+            <div class="demo-placeholder">Click to run a live annealing pass on the backend.</div>
+          </div>
+        </div>
+
+        <div class="demo-card">
+          <h3>Federated learning across agencies</h3>
+          <p class="demo-desc">Adjust the number of FedAvg communication rounds and re-train the
+          4-agency simulation live. Watch federated accuracy climb toward the fully-centralized
+          ceiling as rounds increase — without any agency's raw case data ever being pooled.</p>
+          <label class="slider-label" for="fedRounds">Communication rounds: <span id="fedRoundsVal">15</span></label>
+          <input type="range" id="fedRounds" min="1" max="35" value="15" class="slider">
+          <button class="btn btn-secondary" id="rerunFedBtn">Re-run federated training live</button>
+          <div class="demo-result" id="fedResult" aria-live="polite">
+            <div class="demo-placeholder">Click to retrain live on the backend.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH THREADS ================= -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">FIVE RESEARCH THREADS</span></p>
+      <h2 class="section-title">One system, five independently publishable projects</h2>
+
+      <div class="thread-grid">
+        <div class="thread-card">
+          <span class="chip status status-implemented">Prototype implemented</span>
+          <h3>Digital Twin Crime-Scene Reconstruction</h3>
+          <p>A queryable 3D scene model and interactive viewer — currently driven by structured
+          scan data, with a real photogrammetry/LiDAR pipeline as the natural next step.</p>
+        </div>
+        <div class="thread-card">
+          <span class="chip status status-implemented">Prototype implemented</span>
+          <h3>Multi-Agent Reasoning Framework</h3>
+          <p>A blackboard-architecture agent system with four specialized forensic agents —
+          auditable by construction, and a natural substrate for adding trained models later.</p>
+        </div>
+        <div class="thread-card">
+          <span class="chip status status-flagship">Strongest research candidate</span>
+          <h3>Explainable AI for Legal Reasoning</h3>
+          <p>The explicit statistical + symbolic separation with logged rule firings is directly
+          aligned with active XAI-and-law literature — the most citable thread on its own.</p>
+        </div>
+        <div class="thread-card">
+          <span class="chip status status-simulated">Simulated at demo scale</span>
+          <h3>Federated Learning Across Agencies</h3>
+          <p>Real FedAvg mechanics, demonstrated on synthetic multi-agency data — the algorithm is
+          the genuine article, the deployment context is simulated.</p>
+        </div>
+        <div class="thread-card">
+          <span class="chip status status-simulated">Quantum-inspired, hardware-ready</span>
+          <h3>Quantum-Inspired Graph Optimization</h3>
+          <p>A QUBO formulation solved classically via simulated annealing today, structured to
+          be swapped for a real quantum annealer or QAOA circuit without reformulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ROADMAP ================= -->
+  <section class="section section-alt" id="roadmap">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">ROADMAP</span></p>
+      <h2 class="section-title">From prototype to something a real agency could pilot</h2>
+
+      <ol class="roadmap-list">
+        <li><span class="rm-num">1</span><div><h4>Real case data</h4><p>Swap the synthetic case file for a real or ethics-cleared dataset — every module already reads a fixed schema, so nothing downstream needs to change.</p></div></li>
+        <li><span class="rm-num">2</span><div><h4>Real 3D capture pipeline</h4><p>Replace hand-authored scene coordinates with photogrammetry/LiDAR output feeding the same digital-twin interface.</p></div></li>
+        <li><span class="rm-num">3</span><div><h4>Trained-model agents</h4><p>Add CV models for trajectory/blood-spatter analysis and NLP for witness statements, behind the same finding/confidence/reasoning contract.</p></div></li>
+        <li><span class="rm-num">4</span><div><h4>Legal validation of explanations</h4><p>Work with Indian evidence-law expertise to check the rule-firing explanations against real BNSS / Sakshya Adhiniyam admissibility requirements.</p></div></li>
+        <li><span class="rm-num">5</span><div><h4>Real quantum-hardware benchmarking</h4><p>Benchmark the QUBO on a real annealer or QAOA circuit against the classical baseline already in this repo, at growing case-graph scale.</p></div></li>
+        <li><span class="rm-num">6</span><div><h4>Real multi-agency federated deployment</h4><p>Move from simulation to a real cross-agency protocol with secure aggregation, under actual institutional agreements.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="eyebrow"><span class="pill">ABOUT THE CREATOR</span></p>
+      <h2 class="section-title">Who built this</h2>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="avatar" aria-hidden="true">AG</div>
+        </div>
+        <div class="about-body">
+          <h3 class="about-name">Aayushman Ghatak</h3>
+          <p class="about-title">B.Tech CSE (AI &amp; ML) Undergraduate, SRM Institute of Science and Technology · Chennai, Tamil Nadu, India</p>
+          <p class="about-tagline">Building secure, production-oriented AI systems at the intersection of machine learning, cybersecurity, and quantum computing.</p>
+          <p class="about-bio">
+            Aayushman Ghatak is a Computer Science (AI &amp; ML) undergraduate at SRM Institute of
+            Science and Technology, specializing in applied AI, computer vision, cybersecurity, and
+            quantum computing. His work spans deep learning for industrial and medical inspection
+            (VisiReport AI, a computer-vision pipeline for autonomous medical PCBA inspection),
+            quantum-integrated IoT security (Fusion Gate, combining GRU-based anomaly detection
+            with Qiskit-driven adaptive cryptographic switching based on Quantum Bit Error Rate),
+            and hands-on offensive security as a Cyber Security Engineer Intern at Mindenious,
+            conducting black-box penetration testing with Burp Suite and sqlmap. He previously
+            served as Chairperson of the IEEE GRSS SRM Student Chapter, leading multidisciplinary
+            technical teams on AI research initiatives. QSFIN grew directly out of this combination
+            of interests — AI systems built to hold up under adversarial scrutiny, whether that
+            scrutiny comes from a penetration test or a court of law.
+          </p>
+          <div class="chip-row">
+            <span class="chip mono">Applied AI</span>
+            <span class="chip mono">Computer Vision</span>
+            <span class="chip mono">Cybersecurity &amp; Pentesting</span>
+            <span class="chip mono">Quantum Computing (Qiskit)</span>
+            <span class="chip mono">Quantum Cryptography &amp; QKD</span>
+          </div>
+          <div class="link-row">
+            <a class="link-btn" href="mailto:aayushmanghatakofficial@gmail.com">Email</a>
+            <a class="link-btn placeholder" href="#" data-placeholder="GitHub URL">Add GitHub URL</a>
+            <a class="link-btn placeholder" href="#" data-placeholder="LinkedIn URL">Add LinkedIn URL</a>
+            <a class="link-btn placeholder" href="#" data-placeholder="Portfolio URL">Add Portfolio URL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="nav-brand" aria-hidden="true"><span class="brand-mark"></span><span class="brand-word">QSFIN</span></div>
+      <p class="footer-desc">Quantum Sentient Forensic Intelligence Network — a research prototype for
+      explainable, AI-assisted forensic investigation, built for India's forensic-capacity gap.</p>
+      <p class="footer-disclosure">Running entirely on synthetic, fictional demonstration data. No real case, person, or agency is represented. Nothing on this site constitutes a legal conclusion.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/dashboard" target="_blank" rel="noopener">Live Dashboard ↗</a>
+      <a href="mailto:aayushmanghatakofficial@gmail.com">Contact</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+  <div class="wrap"><p class="copyright">© 2026 Aayushman Ghatak. QSFIN prototype v0.1.</p></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

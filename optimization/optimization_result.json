@@ -1,0 +1,49 @@
+{
+  "variables": [
+    "x_S1",
+    "x_S2",
+    "x_S3",
+    "z_E-02",
+    "z_E-03",
+    "z_E-04"
+  ],
+  "assignment": {
+    "x_S1": 1,
+    "x_S2": 0,
+    "x_S3": 0,
+    "z_E-02": 1,
+    "z_E-03": 1,
+    "z_E-04": 1
+  },
+  "energy": -10.63,
+  "seed": 7,
+  "method": "simulated_annealing (quantum-inspired; drop-in replaceable with real quantum annealer / QAOA)",
+  "bruteforce_verification": {
+    "assignment": {
+      "x_S1": 0,
+      "x_S2": 1,
+      "x_S3": 0,
+      "z_E-02": 1,
+      "z_E-03": 1,
+      "z_E-04": 1
+    },
+    "energy": -10.63,
+    "matches_annealer": true
+  },
+  "degeneracy": {
+    "num_optimal_solutions": 2,
+    "is_degenerate": true,
+    "scenarios_at_optimum": [
+      "S1",
+      "S2"
+    ],
+    "optimal_energy": -10.63
+  },
+  "selected_scenario": "S1",
+  "trusted_evidence": [
+    "E-02",
+    "E-03",
+    "E-04"
+  ],
+  "distrusted_evidence": []
+}

@@ -1,0 +1,166 @@
+{
+  "case_id": "QSFIN-2026-0417",
+  "title": "State vs. Unknown — Residential Homicide, Sector 21 Flat 4B",
+  "jurisdiction": "Simulated State FSL / District Police (synthetic, for prototype demonstration only)",
+  "reported_at": "2026-08-02T22:14:00+05:30",
+  "synthetic": true,
+  "note": "All names, addresses and identifiers below are fictional and generated for this prototype. No real persons, cases, or locations are referenced.",
+
+  "scene": {
+    "scene_id": "SCN-001",
+    "location": "Flat 4B, Sunrise Residency, Sector 21",
+    "captured_at": "2026-08-02T23:40:00+05:30",
+    "capture_method": ["LiDAR sweep (simulated)", "photogrammetry (12 reference photos)", "handheld sketch cross-check"],
+    "rooms": [
+      {
+        "room_id": "living_room",
+        "dimensions_m": [5.2, 4.0, 2.9],
+        "origin": [0, 0, 0]
+      },
+      {
+        "room_id": "kitchen",
+        "dimensions_m": [3.0, 3.0, 2.9],
+        "origin": [5.2, 0, 0]
+      },
+      {
+        "room_id": "bedroom",
+        "dimensions_m": [4.0, 3.5, 2.9],
+        "origin": [0, 4.0, 0]
+      }
+    ],
+    "evidence_markers": [
+      {
+        "evidence_id": "E-01",
+        "type": "blood_spatter",
+        "room": "living_room",
+        "position": [2.6, 1.8, 1.1],
+        "description": "Cast-off blood spatter pattern on north wall, medium velocity",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (23:52)", "FSL Courier (00:40)", "State FSL Biology Div. (08:15)"]
+      },
+      {
+        "evidence_id": "E-02",
+        "type": "shell_casing",
+        "room": "living_room",
+        "position": [3.1, 2.4, 0.02],
+        "description": "9mm shell casing, near sofa",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (23:55)", "FSL Courier (00:40)", "State FSL Ballistics Div. (08:20)"]
+      },
+      {
+        "evidence_id": "E-03",
+        "type": "bullet_impact",
+        "room": "living_room",
+        "position": [0.1, 1.9, 1.4],
+        "description": "Bullet embedded in west wall, entry angle measurable",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (23:58)", "FSL Courier (00:40)", "State FSL Ballistics Div. (08:20)"]
+      },
+      {
+        "evidence_id": "E-04",
+        "type": "footwear_impression",
+        "room": "kitchen",
+        "position": [6.0, 1.2, 0.0],
+        "description": "Partial shoe print, size UK 9-10, tread pattern photographed",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (23:50)", "FSL Courier (00:40)", "State FSL Trace Div. (08:10)"]
+      },
+      {
+        "evidence_id": "E-05",
+        "type": "mobile_device",
+        "room": "bedroom",
+        "position": [1.0, 5.5, 0.8],
+        "description": "Victim's mobile phone, screen locked, recovered on nightstand",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (00:05)", "Cyber Cell (09:00)"]
+      },
+      {
+        "evidence_id": "E-06",
+        "type": "fingerprint",
+        "room": "kitchen",
+        "position": [5.4, 0.3, 1.0],
+        "description": "Latent print on kitchen door handle",
+        "collected_by": "SI R. Menon",
+        "chain_of_custody": ["SI R. Menon (23:50)", "FSL Courier (00:40)", "State FSL Fingerprint Div. (08:05)"]
+      }
+    ],
+    "trajectories": [
+      {
+        "trajectory_id": "T-01",
+        "from_evidence": "E-02",
+        "to_evidence": "E-03",
+        "type": "ballistic",
+        "estimated_origin": [3.1, 2.4, 1.0],
+        "estimated_angle_deg": 14.5,
+        "note": "Estimated firing origin near sofa, consistent with entry wound height."
+      }
+    ]
+  },
+
+  "people": [
+    {
+      "person_id": "P-01",
+      "role": "victim",
+      "alias": "Victim (V)",
+      "last_known_location": "Flat 4B",
+      "time_of_death_estimate": "2026-08-02T21:30:00+05:30 to 2026-08-02T22:00:00+05:30"
+    },
+    {
+      "person_id": "P-02",
+      "role": "person_of_interest",
+      "alias": "Suspect A",
+      "known_associate_of": ["P-01", "P-03"],
+      "prior_record": "none",
+      "shoe_size_uk": 9.5
+    },
+    {
+      "person_id": "P-03",
+      "role": "person_of_interest",
+      "alias": "Suspect B",
+      "known_associate_of": ["P-02"],
+      "prior_record": "one prior (unrelated, 2022)",
+      "shoe_size_uk": 10
+    },
+    {
+      "person_id": "P-04",
+      "role": "witness",
+      "alias": "Neighbor (W1)",
+      "statement": "Heard a loud bang around 21:45, saw a person leave the building in a hurry around 21:50."
+    }
+  ],
+
+  "call_and_location_records": [
+    {"person_id": "P-02", "timestamp": "2026-08-02T21:20:00+05:30", "cell_tower": "TWR-114", "distance_from_scene_m": 180, "event": "cell_ping"},
+    {"person_id": "P-02", "timestamp": "2026-08-02T21:47:00+05:30", "cell_tower": "TWR-118", "distance_from_scene_m": 40, "event": "cell_ping"},
+    {"person_id": "P-02", "timestamp": "2026-08-02T21:52:00+05:30", "cell_tower": "TWR-118", "distance_from_scene_m": 40, "event": "outgoing_call", "to_person_id": "P-03", "duration_sec": 65},
+    {"person_id": "P-03", "timestamp": "2026-08-02T21:52:00+05:30", "cell_tower": "TWR-402", "distance_from_scene_m": 6200, "event": "incoming_call", "from_person_id": "P-02", "duration_sec": 65},
+    {"person_id": "P-02", "timestamp": "2026-08-02T22:10:00+05:30", "cell_tower": "TWR-121", "distance_from_scene_m": 900, "event": "cell_ping"}
+  ],
+
+  "witness_statements": [
+    {
+      "person_id": "P-04",
+      "statement_id": "WS-01",
+      "timestamp": "2026-08-02T22:20:00+05:30",
+      "text": "Heard a loud bang around 21:45 from the direction of 4B. About five minutes later saw someone matching a medium build leave the stairwell quickly, did not see the face clearly."
+    }
+  ],
+
+  "candidate_scenarios": [
+    {
+      "scenario_id": "S1",
+      "summary": "Suspect A acted alone: entered via kitchen door, confronted victim in living room, fired one shot, fled.",
+      "involves": ["P-02"]
+    },
+    {
+      "scenario_id": "S2",
+      "summary": "Suspect A and Suspect B acted together: A entered the flat while B waited/assisted remotely by phone; A fired the shot and fled.",
+      "involves": ["P-02", "P-03"]
+    },
+    {
+      "scenario_id": "S3",
+      "summary": "An unknown third party unrelated to A or B is responsible; A and B's presence near the scene is coincidental.",
+      "involves": []
+    }
+  ]
+}
