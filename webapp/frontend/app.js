@@ -244,10 +244,3 @@ rerunFedBtn.addEventListener("click", async () => {
   }
 });
 
-// ---------------- About: placeholder link click guard ----------------
-document.querySelectorAll(".link-btn.placeholder").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    alert(`Add your ${btn.dataset.placeholder} in index.html (search for "${btn.dataset.placeholder}").`);
-  });
-});
