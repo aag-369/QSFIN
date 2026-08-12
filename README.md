@@ -56,3 +56,9 @@ including exactly which parts of the page are live vs. static, are in `webapp/RE
 
 `docs/ARCHITECTURE.md` — full module map, honest simulated-vs-real breakdown, and a concrete
 roadmap for turning this prototype into a real thesis or research paper.
+
+## License
+
+Copyright (c) 2026 Aayushman Ghatak. All rights reserved. This repository is public for
+portfolio and demonstration purposes only — see [`LICENSE`](./LICENSE) for terms. No reuse,
+copying, or redistribution is permitted without written permission.
